@@ -11,7 +11,7 @@ The goal of this work is to take the raw data, process it and create a tidy data
 - README.md  
    This file. It contain information about the work, the files related to this work, how they are related and how they work.
 - CodeBook.md  
-   This file contents information about the data and each variable of the data.
+   This file conteins information about the data and each variable of the data.
 
 ## How to read the tidy data into R.
 tidyData = read.table('tidyData.txt', header = TRUE, sep = ' ')
