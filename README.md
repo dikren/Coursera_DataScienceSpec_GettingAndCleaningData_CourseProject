@@ -14,7 +14,18 @@ The goal of this work is to take the raw data, process it and create a tidy data
    This file conteins information about the data and each variable of the data.
 
 ## How to read the tidy data into R.
+Set working directory of R to the directory where is the file  
+
+For the repository file use this:   
+```r
 tidyData = read.table('tidyData.txt', header = TRUE, sep = ' ')
+```
+
+For the file from Coursera assignment page use this:   
+```r
+tidyData = read.table('08233080434011e5a04967e5d56d93fc.txt', header = TRUE, sep = ' ')  
+```
+Names are different because the Coursera's server changed the name of my file after I have attached it.
 
 ## Why am I think that my tidy dataset is tidy?
 Each variable is in one column, Each different observation of that variable is in a different row.  
@@ -22,7 +33,9 @@ Also each variable has a descriptive human readable name which also can be used 
 
 ## How to launch the script
 Place all files into your R workspace. Then enter in R console:  
+```r
 source('run_analysis.R')
+```
 
 ## What exactly does the script?
 
