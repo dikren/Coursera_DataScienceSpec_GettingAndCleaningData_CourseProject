@@ -2,31 +2,31 @@
 The goal of this work is to take the raw data, process it and create a tidy data for further analysis.
 
 ## Files description
-- UCI HAR Dataset.zip
+- UCI HAR Dataset.zip  
    The archive with the raw data to be processed and information about this data. The original source is [UCI Machine Learning Repository](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones)
-- tidyData.txt
+- tidyData.txt  
    The result of this course project - the tidy data. More information can be found in the CodeBook.md
-- run_analysis.R
+- run_analysis.R  
    Script that processes the archive with raw data and creates the tidy data.
-- README.md
+- README.md  
    This file. It contain information about the work, the files related to this work, how they are related and how they work.
-- CodeBook.md
+- CodeBook.md  
    This file contents information about the data and each variable of the data.
 
 ## How to read the tidy data into R.
 tidyData = read.table('tidyData.txt', header = TRUE, sep = ' ')
 
-## Why I am think that my tidy dataset is tidy?
-Each variable is in one column, Each different observation of that variable is in a different row.
+## Why am I think that my tidy dataset is tidy?
+Each variable is in one column, Each different observation of that variable is in a different row.  
 Also each variable has a descriptive human readable name which also can be used in R without errors because it is not contains symbols like '-' or '('.
 
 ## How to launch the script
-Place all files into your R workspace. Then enter in R console:
+Place all files into your R workspace. Then enter in R console:  
 source('run_analysis.R')
 
 ## What exactly does the script?
 
-All transformations will be described step by step with references to the task of the assignment.
+All transformations will be described step by step with references to the task of the assignment.  
 Same flags can be found in the run_analysis.R file for easier navigation.
 
 Note: as sayed in the task I need a script "that can be run as long as the Samsung data is in your working directory.", so I assume that there is "UCI HAR Dataset.zip" file in the current working directory of R.
@@ -88,7 +88,7 @@ I suppose that you can think in other way but the task is not very precise and t
 
 #### Step 3: Processing features.txt file
 
-During this step information of features names and corresponding columns' numbers were loaded.
+During this step information of features names and corresponding columns' numbers were loaded.  
 From all names, only those who has '-mean(' or '-std(' in the name were remained,
 
 #### Step 4: Deleting no needed colums from the combined data set
